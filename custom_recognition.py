@@ -6,7 +6,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(f"Using device: {device}")
 
 # Загружаем модель и указываем использование GPU
-model = YOLO("yolo8x.pt")
+model = YOLO("best.pt")
 model.to(device)
 
 cap = cv2.VideoCapture(1)
